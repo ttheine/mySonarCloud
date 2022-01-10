@@ -1,11 +1,6 @@
 name: Build
 on:
-  push:
-    branches:
-      - master
-  pull_request:
-    types: [opened, synchronize, reopened]
-jobs:
+ jobs:
   sonarcloud:
     name: SonarCloud
     runs-on: ubuntu-latest
